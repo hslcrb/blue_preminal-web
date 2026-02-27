@@ -8,6 +8,7 @@
 - `archive.html`: 블로그 포스트 목록 페이지 (Blog Archive Index)
 - `article.html`: 블로그 포스트 상세 보기 페이지 (Blog Article Detail View)
 - `images/`: 페이지 전체에서 사용되는 모든 이미지 자산이 로컬로 저장된 중앙 폴더
+- `assets/`: 로컬로 통합된 CSS, JavaScript 및 폰트 파일 저장 폴더
 - `screen_images/`: 각 페이지별 스크린샷 저장 폴더 (`index_screen.png`, `archive_screen.png`, `article_screen.png`)
 - `README.md`: 본 문서
 
@@ -18,8 +19,8 @@
 ## ✨ 주요 변경 사항
 
 1. **자산 로컬화 (Asset Localization)**
-   - 기존에 외부(Google 서버)에 호스팅되어 있던 모든 이미지를 다운로드하여 `images/` 디렉토리에 로컬 저장했습니다.
-   - 이를 통해 오프라인 환경에서도 완벽하게 작동하며 관리 효율성을 높였습니다.
+   - 기존에 외부에 호스팅되어 있던 모든 이미지와 웹 자산(Tailwind CSS, Google Fonts)을 다운로드하여 `images/` 및 `assets/` 디렉토리에 로컬 저장했습니다.
+   - 이를 통해 완전한 오프라인 환경에서도 작동하며 관리가 용이한 독립적인 스탠드얼론 프로젝트가 되었습니다.
 
 2. **경로 리팩토링**
    - 모든 `<img>` 태그와 CSS `background-image` 속성의 경로를 로컬 `./images/` 경로로 업데이트했습니다.
